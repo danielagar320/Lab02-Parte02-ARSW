@@ -1,0 +1,16 @@
+De acuerdo con lo anterior, y con la lógica del juego, identifique y escriba
+claramente (archivo RESPUESTAS.txt):
+
+-Posibles condiciones de carrera.
+    Las condiciones carrera se pueden llegar a presentar en el caso en que dos o
+    más serpientes interactúen al mismo tiempo sobre un mismo ratón, o un rayo. 
+
+-Uso inadecuado de colecciones, considerando su manejo concurrente (para esto, aumente
+la velocidad del juego y ejecútelo varias veces hasta que se genere un error).
+    Al aumentar la velocidad a veces aparece la excepción ConcurrentModificationException
+    esta se presenta cuando un hilo intenta modificar una serpiente un objeto del tablero y 
+    este está siendo iterado de alguna forma por otro.
+
+-Uso innecesario de esperas activas.
+    Se puede llegar a presentar si se le rpegunta a una serpiente si está muerta y esto ya se 
+    había hecho y se había encontrado que sí lo estaba.  
